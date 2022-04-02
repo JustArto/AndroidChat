@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backk"
     tools:context=".MainActivity"
     android:id="@+id/activity_main">
 
@@ -28,16 +29,19 @@
         android:layout_alignParentRight="true"
         android:src="@android:drawable/ic_menu_send"
         ></ImageView>
-    
+
     <hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+        android:id="@+id/textField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textField"
+        android:paddingBottom="10dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Imput Your Message..."
         android:layout_alignParentBottom="true"
-        app:emojiconSize="29dp"
         android:layout_toLeftOf="@id/submit_button"
         android:layout_toRightOf="@id/emoji_button"
-
+        app:emojiconSize="29dp"
+        android:background="#FFFFFF"
         ></hani.momanii.supernova_emoji_library.Helper.EmojiconEditText>
 
 
@@ -58,9 +62,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:stackFromBottom="true"
-        android:transcriptMode="alwaysScroll"
-        >
-
+        android:transcriptMode="alwaysScroll">
     </ListView>
 
 
